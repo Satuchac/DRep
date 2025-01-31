@@ -5,6 +5,7 @@ CIP-1694 and the Cardano Constitution represent a significant culmination of eff
 Two governance-related hard forks, Chang and Plomin, have already been activated. Notably, the Plomin hard fork was ratified by both Stake Pool Operators (SPOs) and members of the Interim Cardano Committee (CC). This decisive action demonstrates clear community consensus on the principles outlined in CIP-1694. Implicitly, it signals an acceptance of the foundational concept of a Cardano Constitution.
 
 Given this community endorsement, approving the Constitution now is a logical and timely step.
+
 The Cardano Constitution itself is the product of extensive community engagement throughout 2024. This included a dedicated Constitution Convention held in both Argentina and Kenya, where participants actively discussed and refined the document. 
 
 If a substantial portion of the community has already convened in person to deliberate and approve the Constitution's wording off-chain, further delays in on-chain approval seem unwarranted.
