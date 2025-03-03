@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "I voted YES for the 2025 Vision & Roadmap. I'm glad this document was created to allow the community to agree on Cardano's future direction.\n\nThe biggest emphasis is on both L1 and L2 scalability, which we all agree should be prioritized. Completing the Basho era is crucial in the context of the previous roadmap from 2017.\n\nI am not entirely sure about building the PartnerChain Framework in addition to Ouroboros Leios, Peras, Hydra, and Midgard simultaneously. \n\nScalability is addressed from three sides, which might be unnecessary. I understand the importance of the PartnerChain Framework and appreciate that it's being considered.\n\nMaybe we should focus on only 2 things now and not chase too many hares at once.\n\nOn the other hand, it's good to be prepared for all eventualities. Successful applications are starting to consider building their own blockchains, so having a framework that seamlessly connects all chains could be advantageous.\n\nUltimately, I don't mind that the PartnerChain Framework will be built. I see it as support for the Midnight project. I would like to see more focus on privacy directly in the Cardano protocol. If Midnight is delivered, Cardano can adopt some of the technologies once we deliver scalability.\n\nI was pleased to see the emphasis on modular design. The Ethereum ecosystem has adopted this approach, offering high flexibility and adaptability.\n\nProgrammable Assets will bring new possibilities to the ecosystem, including minting USDC and USDT and building soul-bound tokens. \n\nCardano should be as flexible as possible to accommodate various use cases, even those not entirely aligned with Satoshi's ideals. Ideals and real business don't always align, and from the user's perspective, having the ability to choose is important.\n\nThe document mentions using ZK Proofs for building Bitcoin DeFi on Cardano, which is a direction worth supporting. In the Cardano ecosystem, we already have wallets that allow holding ADA and BTC, and further integration is desirable.\n\nSupporting multiple client implementations is essential for a decentralized ecosystem. Combined with the focus on modularity, this is a good approach for future development.\n\nCurrently, staking rewards are not optimal. This issue will be addressed by introducing the min-margin parameter and modifying the pledge-benefit curve for a0.\n\nI largely agree with the Vision & Roadmap described in the document. \n\nHowever, in my opinion, the document could have included an approximate delivery time horizon and a rough estimate of costs. \n\nI assume this will be a topic for further debate."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
