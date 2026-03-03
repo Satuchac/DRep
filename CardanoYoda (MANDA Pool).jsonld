@@ -1,0 +1,86 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "CardanoYoda (MANDA Pool)",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "data:image/png;base64,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"
+    },
+    "motivations": "I've been a dedicated supporter of Cardano since its inception in 2017. Over the years, I've introduced many people to the project. My primary mission within the ecosystem is education. You can find my posts on the X platform.\n\nI feel a strong sense of duty to become a DRep and help enhance the decentralization of Cardano.",
+    "objectives": "As a DRep, I am committed to upholding core blockchain principles such as decentralization, liveness, security, immutability, and sustainability.\n\nIn this role, I recognize the importance of long-term economic sustainability, especially as governance bodies make decisions regarding ADA withdrawals from the treasury.\n\nI will always vote with Cardano's long-term economic sustainability in mind.\n",
+    "paymentAddress": "addr1qy90heutmu9xwssk63uk4v7jjrnaqtwwg377v5t3x9cerrnd5jt4a9xpr98a44vwvty9xq6lkv2t0pjz7gpdpczd49dqhk86wd",
+    "qualifications": "With 20 years of experience as a programmer, I've specialized in building telecommunications and embedded systems, focusing heavily on protocols throughout my career.\n\nI've been part of the Cardano community since 2017 and have served as a Cardano ambassador for a significant period. This year, I also joined Intersect.\n\nIntersect chose me as one of the DRep training leaders. I possess a strong understanding of governance. ",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "X account",
+        "uri": "https://x.com/JaromirTesar"
+      },
+      {
+        "@type": "Identity",
+        "label": "Jaromir Tesar",
+        "uri": "https://raw.githubusercontent.com/Satuchac/DRep/refs/heads/main/CardanoYoda%20(MANDA%20Pool).jsonld"
+      }
+    ]
+  }
+}
